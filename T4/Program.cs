@@ -11,8 +11,8 @@ namespace T4
         static void Main(string[] args)
         {
             Random r = new Random();
-            int val = r.Next(0, 100);
-            int guess = 0;
+            int luku = r.Next(0, 100);
+            int arvaus = 0;
             int arvaukset = 0;
             bool correct = false;
 
@@ -22,18 +22,18 @@ namespace T4
                 Console.Write("Arvaa: ");
                 string input = Console.ReadLine();
 
-                if (!int.TryParse(input, out guess))
+                if (!int.TryParse(input, out arvaus))
                 {
                     Console.WriteLine("Ei ole numero.");
                     continue;
                 }
 
-                if (guess < val)
+                if (arvaus < luku)
                 {
                     Console.WriteLine("Luku on suurempi.");
                     arvaukset++;
                 }
-                else if (guess > val)
+                else if (arvaus > luku)
                 {
                     Console.WriteLine("Luku on pienempi.");
                     arvaukset++;
