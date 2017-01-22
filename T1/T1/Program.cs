@@ -6,27 +6,35 @@ namespace H2T1
     {
         static void Main(string[] args)
         {
-            int[] arr = new int[5];
-            int i, sum=0;
-  
-            Console.Write("Input 10 elements in the array :\n");  
-            for(i=0; i<5; i++)  
-            {  
-	            Console.Write("element - {0} : ",i);
-	            arr[i] = Convert.ToInt32(Console.ReadLine());  		
-            }
-            Console.Write("\nElements in array are: ");  
-            for(i=0; i<5; i++)  
-            {  
-                Console.Write("{0}  ", arr[i]);  
-            }
-            for (i = 0; i < arr.Length; i++)
+            int[] arr1 = new int[5];
+            int i, j, tmp, sum=0, max, min;
+
+            Console.Write("Anna pisteitä:\n");
+            for (i = 0; i < arr1.Length; i++)
             {
-                sum += arr[1,4];
+                Console.Write("Pisteet: ");
+                arr1[i] = Convert.ToInt32(Console.ReadLine());
             }
-            Console.Write("\n");
-            Console.Write("Summa: " + sum);
+            max = arr1[0];
+            min = arr1[0];
+            for (i = 0; i < arr1.Length; i++)
+            {
+                if (arr1[i] > max)
+                {
+                    max = arr1[i];
+                }
+                if (arr1[i] < min)
+                {
+                    min = arr1[i];
+                }
+            }
+            for (i = 0; i < arr1.Length; i++)
+            {
+                sum += arr1[i];
+            }
+            int TotalSum = sum - max - min;
+            Console.Write("\nSumma: " + TotalSum);
             Console.ReadLine();
-      }
         }
-}
+    }
+        }
