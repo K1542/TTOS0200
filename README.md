@@ -1,3 +1,3 @@
 # TTOS0200
 Olio-ohjelmointi
-[T1](TTOS0200/T1/T1/Program.cs)
+[T1](https://github.com/K1542/TTOS0200/blob/master/T1/T1/Program.cs)
