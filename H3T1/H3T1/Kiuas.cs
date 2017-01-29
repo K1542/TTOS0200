@@ -8,12 +8,9 @@ namespace H3T1
 {
     class Kiuas
     {
-        public string Model { get; set; }
-        public string Color { get; set; }
         public int Humidity { get; set; }
         public int Temp { get; set; }
         public bool State { get; set; }
-        public int DoorCount { get; set; }
         public void TempUP()
         {
             Temp += 5;
