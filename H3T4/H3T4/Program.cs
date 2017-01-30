@@ -4,21 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace H3T1
+namespace H3T4
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Kiuas kiuas = new Kiuas();
-            kiuas.State = true;
-            kiuas.Temp = 80;
-            kiuas.Humidity = 70;
-            kiuas.PrintData();
+            Vehicle vehicle = new Vehicle();
+            vehicle.Speed = 160;
+            vehicle.Tyres = 4;
+
+            vehicle.PrintData();
             Console.ReadLine();
-            kiuas.TempUP();
-            kiuas.HumiditydUP();
-            kiuas.PrintData();
+
+            vehicle.PrintData();
             Console.ReadLine();
         }
     }

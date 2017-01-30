@@ -1,8 +1,8 @@
 # TTOS0200
 Olio-ohjelmointi
 
-[T1](https://github.com/K1542/TTOS0200/blob/master/T1/T1/Program.cs)
+[H3T1](https://github.com/K1542/TTOS0200/tree/master/H3T1/H3T1)
 
-[T4](https://github.com/K1542/TTOS0200/blob/master/T4/Program.cs)
+[H3T2](https://github.com/K1542/TTOS0200/tree/master/H3T2/H3T2)
 
-[T5](https://github.com/K1542/TTOS0200/blob/master/T5/T5/Program.cs)
+[H3T3](https://github.com/K1542/TTOS0200/tree/master/H3T3/H3T3)
