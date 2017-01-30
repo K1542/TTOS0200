@@ -13,10 +13,7 @@ namespace H3T3
         public int Kanava { get; set; }
         public bool Päällä { get; set; }
         public string Ohjelma { get; set; }
-
-        // don't create any constructor, so default one will be used
-
-        // method to give more speed
+        
         public void KanavaYlös()
         {
             Kanava += 1;
@@ -38,7 +35,6 @@ namespace H3T3
             }
         }
 
-        // method to slow down
         public void KanavaAlas()
         {
             Kanava -= 1;
@@ -56,8 +52,7 @@ namespace H3T3
             }
 
         }
-
-        // method to display car data
+        
         public void PrintData()
         {
             Console.WriteLine("Telkkarin tietoja : ");
@@ -68,7 +63,6 @@ namespace H3T3
             Console.WriteLine("- Nykyinen ohjelma : " + Ohjelma);
         }
 
-        // destructor
         ~Televisio()
         {
             Console.WriteLine("Car object destroyed.");
