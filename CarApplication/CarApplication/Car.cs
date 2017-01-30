@@ -2,7 +2,7 @@
 
 namespace CarApplication
     {
-        class Car
+    class Car
         {
             // properties
             public string Model { get; set; }
@@ -11,11 +11,18 @@ namespace CarApplication
             public int Speed { get; set; }
             public bool FuzzyDices { get; set; }
             public int DoorCount { get; set; }
+        // don't create any constructor, so default one will be used
+            public Car()
+            {
+                Color = "yellow";
+            }
+            public Car(string newColor)
+            {
+                Color = newColor;
+            }
 
-            // don't create any constructor, so default one will be used
-
-            // method to give more speed
-            public void Accelerate()
+        // method to give more speed
+        public void Accelerate()
             {
                 Speed += 5;
             }
