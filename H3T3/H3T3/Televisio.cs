@@ -65,7 +65,7 @@ namespace H3T3
 
         ~Televisio()
         {
-            Console.WriteLine("Car object destroyed.");
+            Console.WriteLine("Tv räjäytetty.");
         }
     }
 }
