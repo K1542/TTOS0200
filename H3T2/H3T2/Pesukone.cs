@@ -44,7 +44,7 @@ namespace H3T2
         // destructor
         ~Pesukone()
         {
-            Console.WriteLine("Car object destroyed.");
+            Console.WriteLine("Pesukone aiheutti vesivahingon.");
         }
     }
 }
