@@ -35,7 +35,7 @@ namespace H5T3
                             break;
 
                         default:
-                            Console.WriteLine("Try again");
+                            Console.WriteLine("Please choose a number between 0 and 3");
                             break;
                     }
                 }
