@@ -8,12 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="markkaButton" Content="To markka" HorizontalAlignment="Left" Margin="532,162,0,0" VerticalAlignment="Top" Click="markkaButton_Click"/>
-        <Button x:Name="euroButton" Content="To euro" HorizontalAlignment="Left" Margin="532,271,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="328,226,0,0" TextWrapping="Wrap" Text="Euro:" VerticalAlignment="Top"/>
-        <TextBox x:Name="euroTextBox" HorizontalAlignment="Left" Margin="384,214,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
-        <TextBox x:Name="markkaTextBox" HorizontalAlignment="Left" Margin="736,214,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="663,226,0,0" TextWrapping="Wrap" Text="Markka:" VerticalAlignment="Top"/>
+        <Button x:Name="buttonToMarkka" Content="To Markka" HorizontalAlignment="Left" Margin="252,364,0,0" VerticalAlignment="Top" Width="90" Click="toMarkka"/>
+        <Button x:Name="buttonToEuro" Content="To Euro" HorizontalAlignment="Left" Margin="252,419,0,0" VerticalAlignment="Top" Width="90" Click="toEuro"/>
+        <TextBox x:Name="textBoxEuro" HorizontalAlignment="Left" Margin="125,389,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="100
+                 "/>
+        <TextBox x:Name="textBoxMarkka" HorizontalAlignment="Left" Margin="423,389,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="100                  "/>
+        <TextBlock x:Name="textBlockEuro" HorizontalAlignment="Left" Margin="87,389,0,0" TextWrapping="Wrap" Text="Euro: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockEuro_Copy" HorizontalAlignment="Left" Margin="366,389,0,0" TextWrapping="Wrap" Text="Markka: " VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
