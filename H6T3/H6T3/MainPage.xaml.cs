@@ -20,6 +20,7 @@ namespace H6T3
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    private readonly double conversionRate = 5.946;
     public sealed partial class MainPage : Page
     {
         public MainPage()
@@ -27,11 +28,31 @@ namespace H6T3
             this.InitializeComponent();
         }
 
-        private void markkaButton_Click(object sender, RoutedEventArgs e)
+        private void toEuro(object sender, RoutedEventArgs e)
         {
-            string euro = euroTextBox.Text;
-            markoiksi = 
-            double markoiksi = euro * 1.6;
+            double result;
+            bool isOk = double.TryParse(textBoxMarkka.Text.Replace(",", "."), out result);
+            if (isOk)
+            {
+                textBoxEuro.Text = (result / conversionRate).ToString("0.00");
+            }
+            else
+            {
+                textBoxEuro.Text = "ERROR";
+            }
         }
+
+        private void toMarkka(object sender, RoutedEventArgs e)
+        {
+            double result;
+            bool isOk = double.TryParse(textBoxEuro.Text.Replace(",", "."), out result);
+            if (isOk)
+            {
+                textBoxMarkka.Text = (result * conversionRate).ToString("0.00");
+            }
+            else
+            {
+                textBoxMarkka.Text = "ERROR";
+            }
     }
 }
